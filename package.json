@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node_modules/.bin/nodemon server.js --exec babel-node --"
+    "start": "node_modules/.bin/nodemon src/server.js --exec babel-node --",
+    "build": "node ./node_modules/babel-cli/bin/babel.js src -s -D -d dist --presets es2015"
   },
   "keywords": [],
   "author": "",
